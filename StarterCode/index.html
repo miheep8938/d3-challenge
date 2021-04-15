@@ -4,17 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <title>D3Times</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/d3Style.css">
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
 </head>
 
 <body>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-12">
-        <h1>D3Times</h1>
+        <h1 class="title"> US Census on Unhealthy Behavior </h1>
       </div>
     </div>
     <div class="row">
@@ -25,20 +36,31 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12  col-md-9">
+      <div class="col-md-12" style ="background-image:url('us_map.png')">
         <div class="article">
-          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <h2 class="h2">Correlations Discovered Between Health Risks and Age, Income</h2>
+          <h5 class="h5"> Insight 1</h5>
+          <p class="p">When looking at the relationship between the unhealthy behaviors and poverty, we observe the
+            positive correlation with each factor
+            States including Missisipi and New Mexico are found high in poverty that also have relatively higher rate of
+            obisity, smoking, and healthcare.
+            On the other hand, states with low in poverty like New Hampshire and Maryland have shown relatively lower
+            health risks
+          </p>
+          <h5 class="h5"> Insight 2 </h5>
+          <p class="p">The data also shows the median age of each state and Maine has the highest median age. High rate
+            of healthcare could be seen as a factor for this trend.
+            Interestingly, they do not show considerably lower rate of smoking and obesity. Otherwise, Utah has the
+            lowest median age. However, their risk factors do not seem
+            to be very relevant. I assume that there would be other factors to have the lowest median age.
+          </p>
 
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <h5 class="h5"> Insight 3 </h5>
+          <p class="p">When we consider household income, the most noticeable relationship has found in obesity rate.
+            The lower income they earn, higher obesity has been observed. Additionally, the States with low household
+            income also tend to
+            have more number of smokers.
+          </p>
         </div>
       </div>
     </div>
@@ -46,13 +68,9 @@
 
   <!-- Footer-->
   <div id="footer">
-    <p>The Coding Boot Camp&copy;2016</p>
+    <p>Goergia Tech Bootcamp</p>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+
   <script type="text/javascript" src="assets/js/app.js"></script>
 
 </body>
